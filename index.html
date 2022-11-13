@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Profesometro</title>
+</head>
+
+<body>
+    <!--  HEADER  -->
+    <header>
+        <div class="header-icons" id="sinMenu">
+            <a href="index.html"><img id="logo-profesometro-header" src="img/PMLogo-negative.svg" alt=""></a>
+            <button id="btn-menu" onclick="menuOpc(0)"><img src="img/menu-icon.svg" alt="menu-icon"></button>
+        </div>
+        <div class="menuOpc" id="conMenu">
+            <div class="header-icons">
+                <a href="index.html"><img id="logo-profesometro-header" src="img/PMLogo-negative.svg" alt=""></a>
+                <button id="btn-menu" onclick="menuOpc(1)"><img src="img/menu-icon.svg" alt="menu-icon"></button> 
+            </div>
+            <button class="btn-menu" onclick="cambioPantalla('index')">INICIO</button>
+            <div class="buscador-header">
+                <input type="search" name="search" id="search-header"  placeholder="PROFESOR O DEPARTAMENTO">
+                <button id="btn-buscar-header">BUSCAR</button>
+            </div>
+                
+        </div>
+
+    </header>
+    <!--  HEADER END  -->
+    <!--  ---------------------------------------------------------------------------  -->
+    <!--  MAIN  -->
+    <main>
+
+        <div id="screenIndex">
+            <div class="etiqueta">
+                <p class="p-titulo">BIENVENIDO A LA PÁGINA</p>
+                <p class="p-parrafos">colabora calificando a tus profesores y ayuda a los estudiantes a 
+                    elegir al mejor profesor para su horario escolar</p>
+                    <img id="teacher-icon" src="img/teacher-icon.svg" alt="">
+            </div>
+            <p class="p-parrafos">Realiza tu busqueda</p>
+            <input type="search" name="search" class="buscador" placeholder="PROFESOR O DEPARTAMENTO">
+            <button id="btn-inicio" type="submit">Buscar</button>
+            <p class="p-parrafo-normal">Tambien puedes presional algún boton si no recuerdas el nombre del profesor o el departamento.</p>
+            <div class="btns">
+                <button class="btn-opt" onclick="cambioPantalla('profesor')">Profesor</button>
+                <button class="btn-opt" onclick="cambioPantalla('departamento')">Departamento</button>
+            </div>
+        </div>
+        
+        <div id="screenProfesor">
+            <p class="p-titulo">Hola</p>
+        </div>
+
+        <div id="screenDepartamento">
+
+        </div>
+    </main>
+    <!--  MAIN END  -->
+    <!--  ---------------------------------------------------------------------------  -->
+    <!--  FOOTER  -->
+    <footer>
+            <img id="itz-icon" src="img/logo-itz-white.svg" alt="itz-icon">
+            <img id="tecnm-icon" src="img/logo-tecnm-white.svg" alt="tecnm-icon">
+            <div>
+                <p class="p-titulos-footer">CONTACTO</p>
+                <p class="p-parrafos-footer">l20091199@zacatepec.tecnm.mx</p>
+                <p class="p-parrafos-footer">l20091155@zacatepec.tecnm.mx</p>
+                <p class="p-parrafos-footer">l20091168@zacatepec.tecnm.mx</p>
+                <p class="p-parrafos-footer">l19091404@zacatepec.tecnm.mx</p>
+            </div>
+            <div>
+                <p class="p-titulos-footer">DEVELOPERS</p>
+                <p class="p-parrafos-footer">Luis Angel Vazquez Carrillo</p>
+                <p class="p-parrafos-footer">Cielo Perez Muñoz</p>
+                <p class="p-parrafos-footer">Liseth Roman Mariaca</p>
+                <p class="p-parrafos-footer">Carlos Perez Calderon</p>
+            </div>
+    </footer>
+    <!--  FOOTER END  -->
+    <!--  IMPORT SCRIPT JS  -->
+    <script src="js/script.js"></script>
+    <!--  IMPORT SCRIPT JS END  -->
+</body>
+
+</html>
